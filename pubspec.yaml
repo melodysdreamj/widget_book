@@ -21,6 +21,7 @@ dependencies:
   flutter_zoom_drawer:
   flutter_screenutil:
   bot_toast:
+  june:
 
 dev_dependencies:
   flutter_test:
@@ -29,6 +30,7 @@ dev_dependencies:
   netflix_main_view_lego:
   screenutil_lego:
   bot_toast_lego:
+  june_lego:
 
 flutter:
   assets:
