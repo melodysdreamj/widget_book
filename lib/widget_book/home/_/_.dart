@@ -95,7 +95,17 @@ class _HomeViewState extends State<HomeView> {
               // const VerticalDivider(thickness: 1, width: 1),
               Flexible(
                 flex: 7,
-                child: (_loading) ? CupertinoActivityIndicator().center() : _buildContent(vmHome.switchMobileMode),
+                child: IndexedStack(
+                  index: _loading ? 0 : 1,
+                  children: <Widget>[
+                    DevicePreview(
+                      builder: (context) => CupertinoActivityIndicator().center(),
+                      backgroundColor: Colors.grey.withOpacity(0.1),
+                      isToolbarVisible: false,
+                    ),
+                    _buildContent(vmHome.switchMobileMode),
+                  ],
+                ),
               ),
             ],
           ),
@@ -145,23 +155,22 @@ class _HomeViewState extends State<HomeView> {
   }
 
   _setSelectedIndex(int index) {
+    startLoading();
     setState(() {
       _selectedIndex = index;
     });
   }
 
-  startLoading(int index) {
-    WidgetsBinding.instance.addPostFrameCallback((_) {
+  startLoading() {
+    if (!June.getState(() => HomeVM()).switchMobileMode) return;
+    setState(() {
+      _loading = true;
+    });
+    Future.delayed(Duration(milliseconds: 100), () {
       setState(() {
-        _loading = true;
-      });
-      Future.delayed(Duration(milliseconds: 100), () {
-        setState(() {
-          _loading = false;
-        });
+        _loading = false;
       });
     });
-
   }
 }
 
