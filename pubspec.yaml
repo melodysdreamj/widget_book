@@ -31,6 +31,7 @@ dev_dependencies:
   screenutil_lego:
   bot_toast_lego:
   june_lego:
+  widget_book_view_lego:
 
 flutter:
   assets:
