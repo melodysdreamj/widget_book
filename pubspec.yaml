@@ -22,6 +22,7 @@ dependencies:
   flutter_screenutil:
   bot_toast:
   june:
+  tuple: ^2.0.2
 
 dev_dependencies:
   flutter_test:
