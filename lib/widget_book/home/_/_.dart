@@ -92,7 +92,7 @@ class _HomeViewState extends State<HomeView> {
                   ),
                 ),
               ),
-              const VerticalDivider(thickness: 1, width: 1),
+              // const VerticalDivider(thickness: 1, width: 1),
               Flexible(
                 flex: 7,
                 child: (_loading) ? CupertinoActivityIndicator().center() : _buildContent(vmHome.switchMobileMode),
