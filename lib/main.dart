@@ -5,6 +5,7 @@ export 'package:styled_widget/styled_widget.dart';
 import 'package:flutter/material.dart';
 
 export 'util/_/shared_params/_/start_app_params.dart';
+import 'app/screen/home/_/_.dart';
 import 'util/_/build_app/widget/run_app/_.dart';
 export 'package:flutter/services.dart';
 export 'util/_/build_app/widget/run_app/_.dart';
@@ -12,7 +13,7 @@ export 'package:june_flow_util/june_flow_util.dart';
 import 'package:june_flow_util/june_flow_util.dart';
 
 main() {
-  return buildApp();
+  return buildApp(home: HomeView());
 }
 
 class InitView extends StatelessWidget {
