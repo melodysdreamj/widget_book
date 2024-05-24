@@ -23,6 +23,8 @@ dependencies:
   bot_toast:
   june:
   tuple: ^2.0.2
+  flutter_inappwebview:
+  super_cupertino_navigation_bar_for_my_self:
 
 dev_dependencies:
   flutter_test:
@@ -34,8 +36,12 @@ dev_dependencies:
   june_lego:
   widget_book_view_lego:
   toast_view_lego:
+  chrome_style_browser_lego:
+  theme_config_lego:
+  basic_bottom_navigation_view_lego:
 
 flutter:
   assets:
+    - assets/lego/basic_bottom_navigation_view_lego/
     - assets/lego/netflix_main_view_lego/
   uses-material-design: true
