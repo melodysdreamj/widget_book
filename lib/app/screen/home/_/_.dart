@@ -43,15 +43,15 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: JuneBuilder(
-        () => HomeVM(),
+            () => HomeVM(),
         builder: (vmHome) => KeyboardListener(
           focusNode: _focusNode,
           onKeyEvent: (KeyEvent event) {
             if (event is KeyDownEvent) {
               if (event.logicalKey == LogicalKeyboardKey.arrowUp) {
-                _setSelectedIndex((_selectedIndex - 1).clamp(0, 2));
+                _setSelectedIndex((_selectedIndex - 1).clamp(0, widgets.length - 1));
               } else if (event.logicalKey == LogicalKeyboardKey.arrowDown) {
-                _setSelectedIndex((_selectedIndex + 1).clamp(0, 2));
+                _setSelectedIndex((_selectedIndex + 1).clamp(0, widgets.length - 1));
               }
             }
           },
@@ -84,7 +84,7 @@ class _HomeViewState extends State<HomeView> {
                       ).padding(left: 20),
                       Gap(20),
                       Text("${userName}'s\nWidget Book",
-                              style: TextStyle(color: Colors.white, fontSize: 35, fontWeight: FontWeight.bold))
+                          style: TextStyle(color: Colors.white, fontSize: 35, fontWeight: FontWeight.bold))
                           .padding(left: 20, right: 10),
                       Gap(20),
                       ...List.generate(widgets.length, (index) {
@@ -94,7 +94,6 @@ class _HomeViewState extends State<HomeView> {
                   ),
                 ),
               ),
-              // const VerticalDivider(thickness: 1, width: 1),
               Flexible(
                 flex: 7,
                 child: IndexedStack(
@@ -117,6 +116,8 @@ class _HomeViewState extends State<HomeView> {
   }
 
   Widget _buildTextButton(String text, int index) {
+    text = text.replaceAll('_', ' ');
+    text = text.split(' ').map((e) => e[0].toUpperCase() + e.substring(1)).join(' ');
     return TextButton(
       onPressed: () {
         _setSelectedIndex(index);
