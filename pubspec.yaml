@@ -41,6 +41,7 @@ dev_dependencies:
   widget_binding_lego:
   simple_memo_lego:
   favorite_button_lego:
+  navigation_rail_view_lego:
 
 flutter:
   assets:
