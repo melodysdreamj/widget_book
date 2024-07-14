@@ -38,9 +38,9 @@ dev_dependencies:
   chrome_style_browser_lego:
   theme_config_lego:
   basic_bottom_navigation_view_lego:
-  favorite_button_lego:
   widget_binding_lego:
   simple_memo_lego:
+  favorite_button_lego:
 
 flutter:
   assets:
