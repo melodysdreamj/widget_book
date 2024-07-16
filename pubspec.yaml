@@ -25,6 +25,7 @@ dependencies:
   tuple: ^2.0.2
   flutter_inappwebview:
   super_cupertino_navigation_bar_for_my_self:
+  url_launcher: ^6.3.0
 
 dev_dependencies:
   flutter_test:
@@ -47,4 +48,5 @@ flutter:
   assets:
     - assets/lego/basic_bottom_navigation_view_lego/
     - assets/lego/netflix_main_view_lego/
+    - assets/pubdev.svg
   uses-material-design: true
