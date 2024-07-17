@@ -42,9 +42,22 @@ dev_dependencies:
   simple_memo_lego:
   favorite_button_lego:
   navigation_rail_view_lego:
+  insta_profile_page_lego:
+  insta_style_main_feed_lego:
+  kakao_chatroom_list_lego:
+  alert_feed_page_lego:
+  insta_style_feed_lego:
+  login_view2_lego:
+  login_view3_lego:
 
 flutter:
   assets:
+    - assets/lego/login_view3_lego/
+    - assets/lego/login_view2_lego/
+    - assets/lego/insta_style_feed_lego/
+    - assets/lego/alert_feed_page_lego/
+    - assets/lego/insta_style_main_feed_lego/
+    - assets/lego/insta_profile_page_lego/
     - assets/lego/basic_bottom_navigation_view_lego/
     - assets/lego/netflix_main_view_lego/
   uses-material-design: true
