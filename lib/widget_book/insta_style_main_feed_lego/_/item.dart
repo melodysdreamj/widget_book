@@ -26,7 +26,7 @@ class _ItemViewState extends State<ItemView> {
                 CircleAvatar(
                   radius: 20,
                   backgroundImage:
-                  AssetImage('assets/view/insta_style_main_feed/winter.jpg'),
+                  AssetImage('assets/lego/insta_style_main_feed_lego/winter.jpg'),
                 ),
                 Gap(10),
                 Column(
@@ -55,7 +55,7 @@ class _ItemViewState extends State<ItemView> {
         ).padding(horizontal: 12),
         Gap(10),
         Image.asset(
-          'assets/view/insta_style_main_feed/winter.jpg',
+          'assets/lego/insta_style_main_feed_lego/winter.jpg',
           fit: BoxFit.fitWidth,
           width: 1.sw,
         ),
@@ -70,7 +70,7 @@ class _ItemViewState extends State<ItemView> {
                   size: 35,
                 ),
                 Gap(20),
-                SvgPicture.asset("assets/view/insta_style_main_feed/chat.svg",
+                SvgPicture.asset("assets/lego/insta_style_main_feed_lego/chat.svg",
                     width: 31, height: 31),
               ],
             ),

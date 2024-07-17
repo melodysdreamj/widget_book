@@ -57,6 +57,7 @@ dev_dependencies:
   login_and_register_page_lego:
   insta_personal_page_lego:
   kakao_style_friend_feed_lego:
+  chatgpt_appbar_view_lego:
 
 
 flutter:
