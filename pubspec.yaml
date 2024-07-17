@@ -25,6 +25,10 @@ dependencies:
   tuple: ^2.0.2
   flutter_inappwebview:
   super_cupertino_navigation_bar_for_my_self:
+  url_launcher: ^6.3.0
+  auto_size_text:
+  flutter_color:
+  infinite_listview:
 
 dev_dependencies:
   flutter_test:
@@ -49,15 +53,25 @@ dev_dependencies:
   insta_style_feed_lego:
   login_view2_lego:
   login_view3_lego:
+  toss_intro_page_lego:
+  login_and_register_page_lego:
+  insta_personal_page_lego:
+  kakao_style_friend_feed_lego:
+
 
 flutter:
   assets:
+    - assets/lego/kakao_style_friend_feed_lego/
+    - assets/lego/insta_personal_page_lego/
+    - assets/lego/login_and_register_page_lego/
+    - assets/lego/toss_intro_page_lego/
+    - assets/lego/basic_bottom_navigation_view_lego/
+    - assets/lego/netflix_main_view_lego/
+    - assets/pubdev.svg
     - assets/lego/login_view3_lego/
     - assets/lego/login_view2_lego/
     - assets/lego/insta_style_feed_lego/
     - assets/lego/alert_feed_page_lego/
     - assets/lego/insta_style_main_feed_lego/
     - assets/lego/insta_profile_page_lego/
-    - assets/lego/basic_bottom_navigation_view_lego/
-    - assets/lego/netflix_main_view_lego/
   uses-material-design: true

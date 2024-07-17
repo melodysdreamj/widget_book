@@ -2,6 +2,7 @@ import 'package:device_preview_minus/device_preview_minus.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:june/june.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../../../main.dart';
 import '../../../../../../widget_book/netflix_main_view_lego/_/_.dart';
@@ -125,25 +126,64 @@ class _HomeViewState extends State<HomeView> {
   }
 
   Widget _buildTextButton(String text, int index) {
+    // Replace underscores with spaces
+    String originalUrlName = text.split('.').first;
+
     text = text.replaceAll('_', ' ');
+
+    // Split by dot and keep the first part
+    if (text.contains('.')) {
+      text = text.split('.').first;
+    }
+
+    // Capitalize each word
     text = text
         .split(' ')
         .map((e) => e[0].toUpperCase() + e.substring(1))
         .join(' ');
-    return TextButton(
-      onPressed: () {
-        _setSelectedIndex(index);
-      },
-      child: Text(
-        text,
-        overflow: TextOverflow.ellipsis,
-        style: TextStyle(
-          color: _selectedIndex == index ? Colors.white : Colors.grey,
-          fontSize: 30,
-          fontWeight: FontWeight.bold,
+
+    // Return the TextButton widget
+    return Row(
+      children: [
+        Expanded(
+          child: TextButton(
+            onPressed: () {
+              _setSelectedIndex(index);
+            },
+            style: ButtonStyle(
+              alignment: Alignment.centerLeft, // 텍스트 왼쪽 정렬
+            ),
+            child: Text(
+              text,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                color: _selectedIndex == index ? Colors.white : Colors.grey,
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
         ),
-      ),
+        // pub dev icon
+        IconButton(
+            onPressed: () {
+              _openUrl('https://pub.dev/packages/$originalUrlName');
+            },
+            // color: Colors.white,
+            icon: SvgPicture.asset(
+              'assets/pubdev.svg',
+              width: 30,
+              height: 30,
+              // colorFilter: ColorFilter.mode(Colors.white, BlendMode.srcIn),
+            )),
+      ],
     ).padding(vertical: 2, horizontal: 10);
+  }
+
+  _openUrl(String _url) async {
+    if (!await launchUrl(Uri.parse(_url))) {
+      throw Exception('Could not launch $_url');
+    }
   }
 
   Widget _buildContent(bool switchMobileMode) {
