@@ -29,6 +29,8 @@ dependencies:
   auto_size_text:
   flutter_color:
   infinite_listview:
+  animated_notch_bottom_bar:
+  dot_navigation_bar:
 
 dev_dependencies:
   flutter_test:
@@ -58,10 +60,25 @@ dev_dependencies:
   insta_personal_page_lego:
   kakao_style_friend_feed_lego:
   chatgpt_appbar_view_lego:
+  facebook_appbar_view_lego:
+  youtube_appbar_view_lego:
+  insta_app_bar_view_lego:
+  insta_style_bottom_navi2_lego:
+  animated_notch_bottom_bar_view_lego:
+  spotify_bottom_navi_lego:
+  google_drive_bottom_navi_lego:
+  youtube_bottom_navi_view_lego:
+  insta_style_bottom_navigation_bar_lego:
+  dot_navigation_bar_basic_lego:
 
 
 flutter:
   assets:
+    - assets/lego/insta_style_bottom_navigation_bar_lego/
+    - assets/lego/spotify_bottom_navi_lego/
+    - assets/lego/insta_style_bottom_navi2_lego/
+    - assets/lego/insta_app_bar_view_lego/
+    - assets/lego/youtube_appbar_view_lego/
     - assets/lego/kakao_style_friend_feed_lego/
     - assets/lego/insta_personal_page_lego/
     - assets/lego/login_and_register_page_lego/

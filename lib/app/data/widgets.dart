@@ -1,6 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:tuple/tuple.dart';
 
+import '../../widget_book/spotify_bottom_navi_lego/_/_.dart' as spotify_bottom_navi_lego;
+import '../../widget_book/google_drive_bottom_navi_lego/_/_.dart' as google_drive_bottom_navi_lego;
+import '../../widget_book/youtube_bottom_navi_view_lego/_/_.dart' as youtube_bottom_navi_view_lego;
+import '../../widget_book/animated_notch_bottom_bar_view_lego/_/_.dart' as animated_notch_bottom_bar_view_lego;
+import '../../widget_book/insta_style_bottom_navi2_lego/_/_.dart' as insta_style_bottom_navi2_lego;
+import '../../widget_book/facebook_appbar_view_lego/_/_.dart' as facebook_appbar_view_lego;
+import '../../widget_book/insta_style_bottom_navigation_bar_lego/_/_.dart' as insta_style_bottom_navigation_bar_lego;
+import '../../widget_book/dot_navigation_bar_basic_lego/_/_.dart' as dot_navigation_bar_basic_lego;
+import '../../widget_book/youtube_appbar_view_lego/_/_.dart' as youtube_appbar_view_lego;
+import '../../widget_book/insta_app_bar_view_lego/_/_.dart' as insta_app_bar_view_lego;
 import '../../widget_book/chatgpt_appbar_view_lego/_/_.dart' as chatgpt_appbar_view_lego;
 import '../../widget_book/toast_view_lego.toast/usage.dart' as toast_view_lego_toast;
 import '../../widget_book/insta_profile_page_lego/_/_.dart' as insta_profile_page_lego;
@@ -21,6 +31,16 @@ import '../../widget_book/login_and_register_page_lego/_/_.dart' as login_and_re
 import '../../widget_book/insta_personal_page_lego/_/_.dart' as insta_personal_page_lego;
 
 final List<Tuple2<String, Widget>> widgets = [
+  Tuple2('spotify_bottom_navi_lego', spotify_bottom_navi_lego.NewView()),
+  Tuple2('google_drive_bottom_navi_lego', google_drive_bottom_navi_lego.NewView()),
+  Tuple2('youtube_bottom_navi_view_lego', youtube_bottom_navi_view_lego.NewView()),
+  Tuple2('animated_notch_bottom_bar_view_lego', animated_notch_bottom_bar_view_lego.NewView()),
+  Tuple2('insta_style_bottom_navi2_lego', insta_style_bottom_navi2_lego.NewView()),
+  Tuple2('facebook_appbar_view_lego', facebook_appbar_view_lego.NewView()),
+  Tuple2('insta_style_bottom_navigation_bar_lego', insta_style_bottom_navigation_bar_lego.NewView()),
+  Tuple2('dot_navigation_bar_basic_lego', dot_navigation_bar_basic_lego.NewView()),
+  Tuple2('youtube_appbar_view_lego', youtube_appbar_view_lego.NewView()),
+  Tuple2('insta_app_bar_view_lego', insta_app_bar_view_lego.NewView()),
   Tuple2('chatgpt_appbar_view_lego', chatgpt_appbar_view_lego.NewView()),
   Tuple2('toast_view_lego.toast', toast_view_lego_toast.Usage()),
   Tuple2('insta_profile_page_lego', insta_profile_page_lego.NewView()),
