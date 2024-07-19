@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tuple/tuple.dart';
 
+import '../../widget_book/facebook_tapbar_view_lego/_/_.dart' as facebook_tapbar_view_lego;
+import '../../widget_book/defaul_tap_bar_lego/_/_.dart' as defaul_tap_bar_lego;
 import '../../widget_book/spotify_bottom_navi_lego/_/_.dart' as spotify_bottom_navi_lego;
 import '../../widget_book/google_drive_bottom_navi_lego/_/_.dart' as google_drive_bottom_navi_lego;
 import '../../widget_book/youtube_bottom_navi_view_lego/_/_.dart' as youtube_bottom_navi_view_lego;
@@ -31,6 +33,8 @@ import '../../widget_book/login_and_register_page_lego/_/_.dart' as login_and_re
 import '../../widget_book/insta_personal_page_lego/_/_.dart' as insta_personal_page_lego;
 
 final List<Tuple2<String, Widget>> widgets = [
+  Tuple2('facebook_tapbar_view_lego', facebook_tapbar_view_lego.NewView()),
+  Tuple2('defaul_tap_bar_lego', defaul_tap_bar_lego.NewView()),
   Tuple2('spotify_bottom_navi_lego', spotify_bottom_navi_lego.NewView()),
   Tuple2('google_drive_bottom_navi_lego', google_drive_bottom_navi_lego.NewView()),
   Tuple2('youtube_bottom_navi_view_lego', youtube_bottom_navi_view_lego.NewView()),

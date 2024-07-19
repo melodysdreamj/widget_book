@@ -70,6 +70,8 @@ dev_dependencies:
   youtube_bottom_navi_view_lego:
   insta_style_bottom_navigation_bar_lego:
   dot_navigation_bar_basic_lego:
+  defaul_tap_bar_lego:
+  facebook_tapbar_view_lego:
 
 
 flutter:

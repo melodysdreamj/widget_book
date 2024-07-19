@@ -891,8 +891,10 @@ basic_bottom_navigation_view_lego
 bot_toast_lego
 chatgpt_appbar_view_lego
 chrome_style_browser_lego
+defaul_tap_bar_lego
 dot_navigation_bar_basic_lego
 facebook_appbar_view_lego
+facebook_tapbar_view_lego
 favorite_button_lego
 google_drive_bottom_navi_lego
 insta_app_bar_view_lego
